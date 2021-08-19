@@ -1,0 +1,36 @@
+<MainWidget>:
+    BoxLayout:
+        size: root.size
+        pos: root.pos
+        orientation: 'vertical'
+        spacing: 20
+        padding: 20
+
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "data/back.jpg"
+
+        # Widgets
+        Label:
+            text: "T"
+            font_size:  80
+
+        AudioButton:
+            archivo: 'correcto.mp3'
+            text: "Aguntaaa"
+
+        AudioButton:
+            background_normal: 'Beep.png'
+            archivo: 'incorrecto.mp3'
+            size_hint: (.5,.5)
+            button_down: 'Beep.png'
+
+        AudioButton:
+            archivo: 'data/descontrolar.mp3'
+            text: "Esto se va a descontrolar"
+
+        AudioButton:
+            archivo: 'data/turn-down-for-what.mp3'
+            text: "Drop the mic!"
