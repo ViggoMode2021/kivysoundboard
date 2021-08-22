@@ -1,36 +1,162 @@
-<MainWidget>:
-    BoxLayout:
-        size: root.size
-        pos: root.pos
-        orientation: 'vertical'
-        spacing: 20
-        padding: 20
+<AudioButton>:
+    font_size: 32
+    size_hint: (.2,.2)
 
-        canvas:
-            Rectangle:
-                pos: self.pos
-                size: self.size
-                source: "data/back.jpg"
 
-        # Widgets
+<MyLayout>:
+    FloatLayout:
+        orientation: 'horizontal'
+
+        size: root.width, root.height
+
+        AudioButton:
+            id: button_1
+            background_normal: 'hablar.png'
+            archivo: 'hablar.mp3'
+            button_down: 'hablar.png'
+
+        AudioButton:
+            background_normal: 'correr.png'
+            archivo: 'correr.mp3'
+            size_hint: (.2,.2)
+            button_down: 'correr.png'
+
+        AudioButton:
+            id: button_2
+            background_normal: 'cantar.png'
+            archivo: 'cantar.mp3'
+            button_down: 'cantar.png'
+            pos_hint: {'x': .8, 'top': .2}
+
+        AudioButton:
+            background_normal: 'trabajar.png'
+            archivo: 'trabajar.mp3'
+            size_hint: (.2,.2)
+            button_down: 'trabajar.png'
+            pos_hint: {'x': .6, 'top': .2}
+
+        AudioButton:
+            background_normal: 'bailar.png'
+            archivo: 'bailar.mp3'
+            size_hint: (.2,.2)
+            button_down: 'bailar.png'
+            pos_hint: {'x': .4, 'top': .2}
+
+        AudioButton:
+            background_normal: 'practicar deportes.png'
+            archivo: 'practicardeportes.mp3'
+            size_hint: (.2,.2)
+            button_down: 'practicar deportes.png'
+            pos_hint: {'x': .2, 'top': .2}
+
+        AudioButton:
+            background_normal: 'montarenbicicleta.png'
+            archivo: 'montarenbicicleta.mp3'
+            size_hint: (.2,.2)
+            button_down: 'montarenbicicleta.png'
+            pos_hint: {'x': 0, 'top': .4}
+
+        AudioButton:
+            background_normal: 'montarenmonopatin.png'
+            archivo: 'montarenmonopatin.mp3'
+            size_hint: (.2,.2)
+            button_down: 'montarenmonopatin.png'
+            pos_hint: {'x': .2, 'top': .4}
+
+        AudioButton:
+            background_normal: 'estudiar.png'
+            archivo: 'estudiar.mp3'
+            size_hint: (.2,.2)
+            button_down: 'estudiar.png'
+            pos_hint: {'x': .4, 'top': .4}
+
+        AudioButton:
+            background_normal: 'dibujar.png'
+            archivo: 'dibujar.mp3'
+            size_hint: (.2,.2)
+            button_down: 'dibujar.png'
+            pos_hint: {'x': .6, 'top': .4}
+
+        AudioButton:
+            background_normal: 'tocarlaguitarra.png'
+            archivo: 'tocarlaguitarra.mp3'
+            size_hint: (.2,.2)
+            button_down: 'tocarlaguitarra.png'
+            pos_hint: {'x': .6, 'top': .4}
+
+        AudioButton:
+            background_normal: 'hablarportelefono.png'
+            archivo: 'hablarportelefono.mp3'
+            size_hint: (.2,.2)
+            button_down: 'hablarportelefono.png'
+            pos_hint: {'x': .8, 'top': .4}
+
+        AudioButton:
+            background_normal: 'verlatele.png'
+            archivo: 'verlatele.mp3'
+            size_hint: (.2,.2)
+            button_down: 'verlatele.png'
+            pos_hint: {'x': .0, 'top': .6}
+
+        AudioButton:
+            background_normal: 'nadar.png'
+            archivo: 'nadar.mp3'
+            size_hint: (.2,.2)
+            button_down: 'nadar.png'
+            pos_hint: {'x': .2, 'top': .6}
+
+        AudioButton:
+            background_normal: 'esquiar.png'
+            archivo: 'esquiar.mp3'
+            size_hint: (.2,.2)
+            button_down: 'esquiar.png'
+            pos_hint: {'x': .4, 'top': .6}
+
+        AudioButton:
+            background_normal: 'pasartiempoconamigos.png'
+            archivo: 'pasartiempoconamigos.mp3'
+            size_hint: (.2,.2)
+            button_down: 'pasartiempoconamigos.png'
+            pos_hint: {'x': .6, 'top': .6}
+
+        AudioButton:
+            background_normal: 'escribir.png'
+            archivo: 'escribir.mp3'
+            size_hint: (.2,.2)
+            button_down: 'escribir.png'
+            pos_hint: {'x': .8, 'top': .6}
+
+        AudioButton:
+            background_normal: 'play.png'
+            archivo: 'track.mp3'
+            size_hint: (.2,.2)
+            button_down: 'play.png'
+            pos_hint: {'x': .60, 'top': .8}
+
         Label:
-            text: "T"
-            font_size:  80
+            text: "Los verbos/Los pasatiempos"
+            font_size: 32
+            size_hint: (.10,.10)
+            background_color: (0, 0, 0, 0)
+            canvas.before:
+                Color:
+                    rgba: self.background_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            bold: True
+            italic: True
+            pos_hint: {'x': .10, 'top': .8}
 
-        AudioButton:
-            archivo: 'correcto.mp3'
-            text: "Aguntaaa"
 
-        AudioButton:
-            background_normal: 'Beep.png'
-            archivo: 'incorrecto.mp3'
-            size_hint: (.5,.5)
-            button_down: 'Beep.png'
 
-        AudioButton:
-            archivo: 'data/descontrolar.mp3'
-            text: "Esto se va a descontrolar"
 
-        AudioButton:
-            archivo: 'data/turn-down-for-what.mp3'
-            text: "Drop the mic!"
+
+
+
+
+
+
+
+
+
